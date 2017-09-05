@@ -1,0 +1,18 @@
+//- include framework files
+
+include ../../framework/jade/all.pug
+
+- is_demo 			= 	true
+- theme_name		=	'Lock'
+- stylesheet 		=	'css/styles.min.css'
+- js 				=	['frameworks/jquery/jquery.min.js', 'frameworks/bootstrap/js/bootstrap.min.js', 'frameworks/owl.carousel/owl.carousel.min.js', 'frameworks/timer/jquery.simple.timer.js', 'frameworks/vegas/vegas.min.js' , 'frameworks/gallery/isotope.js' , 'frameworks/gallery/script.js' , 'frameworks/magnific-popup/jquery.magnific-popup.min.js', 'frameworks/wow/wow.min.js', 'frameworks/wow/wow.js' , 'frameworks/particles/particles.js','frameworks/owl.carousel/owl.carousel.js','owl-carosel.min.js','frameworks/scroll/scroll.js' ,'frameworks/scroll/scroll.min.js','frameworks/wow/wow.min.js', 'js/custom.js']
+
+- css				=	['frameworks/bootstrap/css/bootstrap.min.css', 'frameworks/font-awesome/css/font-awesome.min.css', 'frameworks/owl.carousel/assets/owl.carousel.min.css', 'frameworks/owl.carousel/assets/owl.theme.default.min.css', 'frameworks/vegas/vegas.min.css', 'frameworks/flipclock/flipclock.css','frameworks/gallery/gallery.css' , 'frameworks/owl.carousel/owl-carosel1/owl-carosel1.css', 'frameworks/owl.carousel/owl-carosel1/owl-theme.css','frameworks/magnific-popup/magnific-popup.css','frameworks/owl.carousel/assets/owl.carousel.min.css','frameworks/owl.carousel/assets/owl.theme.css','frameworks/owl.carousel/assets/owl.transitions.css','frameworks/owl.carousel/assets/owl.carousel.css','frameworks/owl.carousel/assets/owl.transitions.css','frameworks/animate/animate.css','frameworks/animate.css/animate.min.css']
+- images_folder 	=	'images'
+- js_folder			=	'js'
+- custom_js 		=	'theme.js'
+
+
+//- navbar related configs
+- brand_type 		= 	'name'
+- navbar_brand 		=	theme_name

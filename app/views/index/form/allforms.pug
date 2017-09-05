@@ -1,0 +1,134 @@
+mixin allforms()
+	section#contact-us
+		.container
+			.row
+				.col-md-12
+					.discrb.text-center
+						h2 
+							| CONTACT 
+							span.span2 US
+								i.fa.fa-envelope
+			.row
+				.col-md-4.text-center
+					.iconbox
+						i.fa.fa-map-marker
+						h3 Location:
+						p London, England
+					.iconbox
+						i.fa.fa-phone
+						h3 Phones:
+						p (+92) 123-45-67
+					.iconbox
+						i.fa.fa-envelope-o
+						h3 Email:
+						p example@gmail.com
+				.col-md-2
+					span.span 
+						i.fa.fa-user
+					input#myform.input-block.form-control.form-lg.my-inp(placeholder="Full Name" required)
+				.col-md-2
+					span.span 
+						i.fa.fa-envelope
+					input.input-block.form-control.form-lg.my-inp(placeholder="Email Address" required)
+				.col-md-2
+					span.span 
+						i.fa.fa-phone
+					input.input-block.form-control.form-lg.my-inp(placeholder="Phone No" required)
+				.col-md-2
+						select.form-control.form-control-lg.lge
+							option Country
+							option Pakistan
+							option India
+							option USA
+				.col-md-8
+					span.span 
+						i.fa.fa-pencil
+					textarea.form-control.text1(rows="8"  placeholder="Message")
+					button.btn.btn-default.btn-mine.btn-lg SEND MESSAGE
+	section#form.Course__reg
+		.container
+			.row
+				.col-md-12
+					.discrb.text-center
+						h2 
+							| SUBMIT FORM
+							i.fa.fa-envelope
+			.row
+				form.form
+					form#contact-form.form-vertical(action='/frontend/web/site/contact', method='post',data-toggle="validato")
+						input(type='hidden', name='_csrf', value='UTNjV0oxMy0CAFdjMgcKWTlkF2cvXlxKZFUtEDJaYXJpYTwFJBxEdw==')
+						.form__wrapper
+							.row
+								.col-xs-12.col-sm-6.col-md-6
+									.input-group
+										.line-bottom
+										.form-group.field-contactform-name
+											input#contactform-name.form-control.reg__input(type='text', name='ContactForm[name]', placeholder='Enter Your Name' required)
+											.help-block
+								.col-xs-12.col-sm-6.col-md-6
+									.input-group
+										.line-bottom
+										.form-group.field-contactform-email.required
+											input#contactform-email.form-control.reg__input(type='text', name='ContactForm[email]', placeholder='Enter Your Email' required)
+											.help-block
+							.row
+								.col-xs-12.col-sm-6.col-md-6
+									.input-group
+										.line-bottom
+										.form-group.field-contactform-subject.required
+											input#contactform-subject.form-control.reg__input(type='text', name='ContactForm[subject]', placeholder='Enter Your Subject' required)
+											.help-block
+								.col-xs-12.col-sm-6.col-md-6
+									.input-group
+										.line-bottom
+										.form-group.field-contactform-body.required
+											input#contactform-body.form-control.reg__input(type='text', name='ContactForm[body]', placeholder='Enter your Message' required)
+											.help-block
+							.row
+								.col-xs-12.col-sm-6.col-sm-offset-3.col-md-6.col-md-offsett-3
+									.form-group.field-contactform-verifycode.required
+										.row
+											.form--img
+												img#contactform-verifycode-image(src='/frontend/web/site/captcha?v=59a841d9516c4', alt='')
+											.input-group.input--captcha
+												.col-lg-12
+													.line-bottom
+													input#contactform-verifycode.form-control.reg__input(type='text', name='ContactForm[verifyCode]', placeholder='Enter verification code' required)
+										.help-block
+							.row
+								.col-md-12
+									.button--form
+										button.btn.btn--form(type='submit', name='contact-button') Submit
+	section#contact-us1
+		.container
+			.row
+				.col-md-12
+					.discrb.text-center
+						h2 
+							| CONTACT
+							i.fa.fa-envelope
+							span.span2 FORM
+			.row
+				.col-md-10.col-md-offset-2
+					#commentForm
+						.col-md-4
+							span.span 
+								i.fa.fa-user
+							input.input-block.form-control.form-lg.my-inp(placeholder="Full Name" required)
+							span.span 
+								i.fa.fa-envelope
+							input.input-block.form-control.form-lg.my-inp(placeholder="Email Address" required)
+							span.span 
+								i.fa.fa-phone
+							input.input-block.form-control.form-lg.my-inp(placeholder="Phone No" required)
+							select.form-control.form-control-lg.lge
+								option Country
+								option Pakistan
+								option India
+								option USA
+						.col-md-6
+							span.span 
+								i.fa.fa-pencil
+							textarea.form-control.text1(rows="8"  placeholder="Message")
+							.btno.text-center
+								button.btn.btn-default.btn-mine.btn-block.btn-lg SEND MESSAGE

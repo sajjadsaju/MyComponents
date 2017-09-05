@@ -1,0 +1,25 @@
+include ../../config/jade.pug
+include ../includes.pug
+doctype html
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		block title
+			title #{theme_name}
+			link(rel="icon" href="img/icon.ico" type="image/x-icon")
+
+		// CSS INCLUDES
+		for i in css
+				link(type='text/css' rel ='stylesheet' href = i)
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+		link(rel="stylesheet", type="text/css", href="css/styles.css" id='switcher-target')
+			
+	// === START : BODY ===
+	body
+		block main_content
+		// JS INCLUDES
+		for s in js
+			script(type='text/javascript' src=s)

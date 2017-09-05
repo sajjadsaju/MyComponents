@@ -1,0 +1,22 @@
+mixin switcher()
+
+	//============ switcher starts here =============
+
+	section()&attributes(attributes)
+		.container
+			.row
+				.col-md-12
+					div.switcher
+						.switcher-btn
+							i.fa.fa-cog.hidden-xs
+
+						.switcher-content
+							p theme colors
+							hr
+
+							.colors
+								ul
+									for i in ['styles', 'emerald', 'peter', 'carot' ,'alizarin','secondary','Dragomir-2','black']
+										li(class='sw-clr switcher-' + i + '-bg', data-target= i)
+
+	//============== switcher end here ================

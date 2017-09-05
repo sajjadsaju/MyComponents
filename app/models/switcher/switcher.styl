@@ -1,0 +1,121 @@
+switcher-color = {
+	styles: #189a99,
+	emerald: #F44336,
+	peter: #E91E63,
+	carot: #9C27B0,
+	alizarin: #2196F3,	
+	secondary: #00BCD4,
+	Dragomir-2: #3F51B5,
+	black : #673AB7
+}
+.switcher
+	position fixed
+	width 200px
+	height 220px
+	background #fcfcfc;
+	right -220px
+	top 0px
+	padding-top 15px
+	box-shadow 0px 0px 8px 2px #999
+	-webkit-transition 0.5s all ease-in-out
+	-moz-transition 0.5s all ease-in-out
+	-o-transition 0.5s all ease-in-out
+	transition 0.5s all ease-in-out
+	border-left none
+	z-index 9
+	.switcher-btn
+		position fixed
+		top -26px
+		right -40px
+		height 70px
+		width 100px
+		background #fcfcfc
+		color #189a99
+		display inline-block
+		border-left none
+		border-radius 0
+		-webkit-transform rotate(45deg)
+		-moz-transform rotate(45deg)
+		-o-transform rotate(45deg)
+		transform rotate(45deg)
+		-webkit-transition 0.5s all ease-in-out
+		-moz-transition 0.5s all ease-in-out
+		-o-transition 0.5s all ease-in-out
+		transition 0.5s all ease-in-out
+
+		.fa
+			cursor pointer
+			color #454545
+			font-size 18px
+			position absolute
+			left 42px
+			top 40px
+			-webkit-transition 0.5s all ease-in-out
+			-moz-transition 0.5s all ease-in-out
+			-o-transition 0.5s all ease-in-out
+			transition 0.5s all ease-in-out
+		
+
+	.switcher-content
+		position relative
+		padding 20px
+		text-align left
+		text-transform capitalize
+		p
+			color #666
+		
+		hr
+			width 20%
+			
+		.colors
+			position relative
+			text-align center
+			ul
+				padding 0
+				margin 0
+				
+				li
+					float left
+					width 25px
+					height 25px
+					margin 8px
+					margin-left 0
+					display inline
+					border 2px solid white
+					border-radius 50%
+					border 2px solid #fcfcfc
+					transition 0.5s all
+					&:hover
+						cursor pointer
+						transform rotate(2deg)
+						box-shadow 0px 0px 0px 2px #888
+							
+	.variations
+		position relative
+		text-align center
+		color white
+		margin-top 15px
+		hr
+			width 20%
+	.demo
+		ol
+			li
+				padding 5px
+				font-size 12
+				a
+					color white
+					&:hover
+						text-decoration none
+	&:hover
+		right 0%
+		.switcher-btn
+			background-color primary
+			i
+				color white
+
+@media(max-width 767px)
+	.switcher-upack
+		display none
+for name, value in switcher-color
+	.switcher-{name}-bg
+		background-color value !important

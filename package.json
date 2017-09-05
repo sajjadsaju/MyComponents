@@ -1,0 +1,40 @@
+{
+  "name": "sajad",
+  "version": "1.0.0",
+  "description": "this is my 2nd project",
+  "main": "GruntFile.js",
+  "dependencies": {
+    "flat-color-icons": "^1.1.0",
+    "grunt": "^1.0.1",
+    "init": "^0.1.2"
+  },
+  "devDependencies": {
+    "animate.css": "^3.5.2",
+    "bootstrap": "^3.3.7",
+    "fittext": "^1.0.1",
+    "flat-social-icons": "0.0.1",
+    "font-awesome": "^4.7.0",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-pug": "^1.0.0",
+    "grunt-contrib-stylus": "^1.2.0",
+    "grunt-contrib-uglify": "^3.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-prettify": "^0.4.0",
+    "jquery": "^3.2.1",
+    "jquery-simple-timer": "^1.0.0",
+    "jquery-smooth-scroll": "^2.2.0",
+    "magnific-popup": "^1.1.0",
+    "owl.carousel": "^2.2.0",
+    "particles.js": "^2.0.0",
+    "vegas": "^2.4.0",
+    "wowjs": "^1.1.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sajad",
+  "license": "ISC"
+}
